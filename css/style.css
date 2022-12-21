@@ -1,0 +1,463 @@
+    /* common css design  */
+    
+    * {
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Fira Sans', sans-serif;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    
+    .dotted-hr {
+        width: 150px;
+        border: dotted 5px white;
+        border-bottom: none;
+    }
+    /* font-family: 'Fira Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Satisfy', cursive; */
+    /* header starts form here header starts form here header starts form here */
+    
+    header {
+        background: #0c6168;
+        padding: 1% 7%;
+        text-align: center;
+    }
+    
+    .nav-header h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    nav {
+        border-radius: 10px;
+        margin: 2px 0;
+        padding: 10px 0;
+        width: 10;
+    }
+    
+    nav a:hover {
+        background-color: rgb(107, 114, 116);
+        transition: .5s;
+    }
+    
+    nav a {
+        background-color: #3b7c83;
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 10px 50px;
+        border-radius: 10px;
+        margin: 3px 0;
+    }
+    
+    [class*"col-"] {
+        width: 100%;
+    }
+    
+    header::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    /* header ends form here  header ends form here header ends form here */
+    /* profile starts form here */
+    
+    .profile {
+        padding: 130px 10px;
+        position: relative;
+        text-align: center;
+    }
+    
+    .profile-desc h1 {
+        font-family: 'Satisfy', cursive;
+    }
+    
+    .profile-desc span {
+        display: block;
+    }
+    
+    .profile-desc p {
+        padding: 10px 10px;
+        text-align: center;
+    }
+    
+    .top-weather-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .top-weather-icon:hover {
+        transform: rotate(360deg);
+        cursor: pointer;
+        transition: .9s;
+    }
+    
+    .bottom-weather-icon {
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+    }
+    
+    .bottom-weather-icon:hover {
+        transform: rotate(-360deg);
+        cursor: pointer;
+        transition: .9s;
+    }
+    /* profile ends form here */
+    /* about me starts from here  */
+    
+    .about-me {
+        margin: 100px auto;
+        text-transform: capitalize;
+        background: #39a4ac;
+        color: white;
+        padding: 1% 7%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .about-me h2 {
+        text-align: center;
+    }
+    
+    .aboutme-image img {
+        margin: 30px auto;
+        width: 200px;
+        height: 250px;
+        border: 2px white solid;
+        border-radius: 100%;
+        margin-left: 90px;
+    }
+    
+    .aboutme-hr {
+        border: 2px solid rgb(70, 63, 63);
+    }
+    
+    .aboutme-desc p:first-child {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(7, 4, 4);
+    }
+    
+    .aboutme-desc p,
+    a {
+        padding: 5px;
+    }
+    
+    .aboutme-desc a {
+        text-transform: none;
+    }
+    
+    .cvButton {
+        background-color: gray;
+        width: 100px;
+        height: 30px;
+        margin-left: 130px;
+        cursor: pointer;
+        border: 1px white solid;
+    }
+    
+    .about-me::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    /* about me ends from here  */
+    /* professional experience starts from here  */
+    
+    .professional {
+        padding: 1% 7%;
+    }
+    
+    .professional .card {
+        background: #a39e9e;
+        border-radius: 5px;
+        padding: 10px;
+        transition: .3s;
+        height: 600px;
+    }
+    
+    .card:hover {
+        box-shadow: 0px 4px 8px 5px black;
+    }
+    
+    .card-icon {
+        text-align: center;
+    }
+    
+    .card-icon img {
+        border: 2px white solid;
+        border-radius: 100%;
+        padding: 20px;
+    }
+    
+    .card-title {
+        text-align: center;
+        background: #616161;
+        border-radius: 5px;
+        padding: 1px 0;
+        text-transform: uppercase;
+    }
+    
+    .education {
+        margin-top: 30px;
+    }
+    
+    .skills {
+        margin-top: 30px;
+    }
+    
+    .skill-container {
+        text-transform: uppercase;
+    }
+    
+    .skill-container li {
+        margin: 27px 0;
+        font-weight: bold;
+        position: relative;
+    }
+    
+    .skill-container li::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 22px;
+        left: 0;
+        height: 10px;
+        background-color: rgba(86, 86, 153, .5);
+        border-radius: 10px;
+    }
+    
+    .skill-container li::after {
+        content: '';
+        position: absolute;
+        top: 22px;
+        left: 0;
+        width: 0;
+        height: 10px;
+        background-color: rgba(86, 86, 153, 1);
+        border-radius: 10px;
+        animation: 3s linear 2s infinite forwards;
+    }
+    
+    .skill-container li.html::after {
+        animation-name: html;
+    }
+    
+    @keyframes html {
+        to {
+            width: 95%;
+        }
+    }
+    
+    .skill-container li.css::after {
+        animation-name: css;
+    }
+    
+    @keyframes css {
+        to {
+            width: 95%;
+        }
+    }
+    
+    .skill-container li.bootstrap::after {
+        animation-name: bootstrap;
+    }
+    
+    @keyframes bootstrap {
+        to {
+            width: 40%;
+        }
+    }
+    
+    .skill-container li.javaScript::after {
+        animation-name: javaScript;
+    }
+    
+    @keyframes javaScript {
+        to {
+            width: 50%;
+        }
+    }
+    
+    .skill-container li.react::after {
+        animation-name: react;
+    }
+    
+    @keyframes react {
+        to {
+            width: 20%;
+        }
+    }
+    
+    .skill-container li.tawilwind::after {
+        animation-name: tawilwind;
+    }
+    
+    @keyframes tawilwind {
+        to {
+            width: 40%;
+        }
+    }
+    
+    .skill-container li.c::after {
+        animation-name: c;
+    }
+    
+    @keyframes c {
+        to {
+            width: 80%;
+        }
+    }
+    
+    .skill-container li.java::after {
+        animation-name: java;
+    }
+    
+    @keyframes java {
+        to {
+            width: 95%;
+        }
+    }
+    
+    .skill-container li.python::after {
+        animation-name: python;
+    }
+    
+    @keyframes python {
+        to {
+            width: 80%;
+        }
+    }
+    
+    .professional::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    /* professional experience ends from here  */
+    /* contract from starts here  */
+    
+    .achivement-contact {
+        padding: 1% 7%;
+        background: #39a4ac;
+        color: white;
+        margin: auto;
+        /* height: 70vh; */
+    }
+    
+    .achivement {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .achivement p {
+        font-size: 15px;
+    }
+    
+    .contact {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .contact input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        resize: none;
+    }
+    
+    .contact button {
+        border: none;
+        border-radius: 12px;
+        background-color: #052d2f;
+        padding: 10px 15px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .contact-link {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .media-button {
+        margin-top: 100px;
+    }
+    
+    .media-button button {
+        border: none;
+        border-radius: 100%;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        margin: 8px;
+        cursor: pointer;
+    }
+    
+    .media-button button:hover {
+        background-color: gray;
+    }
+    /* .media-button .fa {
+    width: 20px;
+    height: 20px;
+} */
+    
+    .achivement-contact::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    /* contract from starts here  */
+    /* footer starts here  */
+    
+    .footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+    
+    .footer a {
+        color: white;
+        display: block;
+    }
+    
+    .footer a:hover {
+        color: gray;
+    }
+    
+    .footer-desc {
+        margin-top: 60px;
+        text-transform: capitalize;
+    }
+    
+    .love {
+        color: red;
+        font-size: 25px;
+    }
+    
+    .footer::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    /* footer ends here  */

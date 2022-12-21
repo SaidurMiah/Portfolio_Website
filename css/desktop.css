@@ -1,0 +1,151 @@
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+
+/* header starts from hear........ header */
+
+section {
+    height: 100vh;
+}
+
+.first-sec {
+    height: 80vh;
+}
+
+.nav-logo {
+    text-align: left;
+}
+
+.nav-header {
+    text-align: right;
+    display: block;
+}
+
+nav a {
+    padding: 10px;
+    display: inline-block;
+    text-align: right
+}
+
+
+/* header ends from hear......... header */
+
+.profile-desc p {
+    padding: 10px 100px;
+}
+
+.profile-desc h1 {
+    font-size: 40px;
+}
+
+
+/* header ends here  */
+
+
+/* .professional starts here  */
+
+.professional {
+    padding: 0% 5%;
+}
+
+.education {
+    margin-top: 0px;
+}
+
+.skills {
+    margin-top: 0px;
+}
+
+
+/* .professional ends here  */
+
+
+/* contact starts here  */
+
+.achivement-contact {
+    height: 80vh;
+}
+
+.contact-link {
+    margin-top: 0px;
+    position: relative;
+}
+
+.media-button {
+    position: absolute;
+    top: 50px;
+    left: 190px;
+    transform: translate(-50%, -50%);
+    margin-top: 200px;
+}
+
+
+/* contact ends here  */
+
+
+/* footer starts here  */
+
+.footer {
+    height: 10vh;
+}
+
+.footer a {
+    display: inline;
+}
+
+.footer-desc {
+    margin-top: 0;
+}
+
+
+/* footer ends here  */
